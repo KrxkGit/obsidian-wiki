@@ -69,6 +69,7 @@ Works with **any AI coding agent** that can read files — Claude Code, Cursor, 
 | **GitHub Copilot (CLI)** | — | `~/.copilot/skills/` | ✅ `/wiki-ingest`, `/wiki-query`, etc. |
 | **[Kilocode](https://kilo.ai/)** | `AGENTS.md` / `CLAUDE.md` | `.agents/skills/` + `.claude/skills/` | ✅ `/wiki-ingest`, `/wiki-status`, etc. |
 | **[Pi](https://pi.dev)** | `AGENTS.md` | `.pi/skills/` + `~/.pi/agent/skills/` | ✅ `/wiki-ingest`, `/wiki-history-ingest pi`, etc. |
+| **[CodeBuddy](https://www.codebuddy.ai/home)** | `AGENTS.md` | `~/.codebuddy/skills/` | Describe intent in chat |
 
 > Each agent has its own convention for discovering skills. `setup.sh` symlinks the canonical `.skills/` directory into each agent's expected location. You write skills once, every agent can use them.
 
@@ -397,6 +398,7 @@ obsidian-wiki/
 ├── ~/.trae-cn/skills/             → global symlinks — Trae CN
 ├── ~/.kiro/skills/                → global symlinks — Kiro CLI
 ├── ~/.pi/agent/skills/            → global symlinks — Pi
+├── ~/.codebuddy/skills/           → global symlinks — CodeBuddy
 ├── ~/.agents/skills/              → global symlinks — OpenCode, Aider, Droid, generic
 │
 ├── setup.sh                          # One-command agent setup
@@ -423,6 +425,7 @@ When you run `bash setup.sh`, it does the following:
    - `~/.trae/skills/` + `~/.trae-cn/skills/` — Trae / Trae CN
    - `~/.kiro/skills/` — Kiro CLI
    - `~/.pi/agent/skills/` — Pi
+   - `~/.codebuddy/skills/` — CodeBuddy
    - `~/.agents/skills/` — OpenCode, Aider, Factory Droid, and other AGENTS.md-aware agents
 
 After that, you're in some project, say `~/projects/my-cool-app`, working with Claude or Pi. Two commands:

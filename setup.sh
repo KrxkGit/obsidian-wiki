@@ -23,7 +23,8 @@
 #        - ~/.copilot/skills/     (GitHub Copilot CLI)
 #        - ~/.trae/skills/        (Trae)
 #        - ~/.trae-cn/skills/     (Trae CN)
-#        - ~/.kiro/skills/        (Kiro CLI)
+#        - ~/.kiro/skills/          (Kiro CLI)
+#        - ~/.codebuddy/skills/   (CodeBuddy)
 #        - ~/.agents/skills/      (OpenCode, Aider, Factory Droid, generic)
 #   4. Bootstraps AGENTS.md aliases (CLAUDE.md, GEMINI.md, .hermes.md)
 #   5. Prints a summary of what's ready
@@ -208,6 +209,7 @@ install_skills "$HOME/.trae/skills"               "~/.trae/skills/ (Trae)"
 install_skills "$HOME/.trae-cn/skills"            "~/.trae-cn/skills/ (Trae CN)"
 install_skills "$HOME/.kiro/skills"               "~/.kiro/skills/ (Kiro CLI)"
 install_skills "$HOME/.pi/agent/skills"           "~/.pi/agent/skills/ (Pi)"
+install_skills "$HOME/.codebuddy/skills"          "~/.codebuddy/skills/ (CodeBuddy)"
 install_skills "$HOME/.agents/skills"             "~/.agents/skills/ (OpenCode, Aider, Droid, generic)"
 
 # ── Step 4: Summary ──────────────────────────────────────────
@@ -220,7 +222,8 @@ echo ""
 echo " Skills found:    $SKILL_COUNT"
 echo " Agents ready:    Claude Code, Cursor, Windsurf, Gemini CLI, Antigravity,"
 echo "                  Codex, Hermes, OpenClaw, OpenCode, Aider, Factory Droid,"
-echo "                  Trae, Trae CN, Kiro, Pi, GitHub Copilot (CLI + VS Code Chat)"
+echo "                  Trae, Trae CN, Kiro, Pi, CodeBuddy,"
+echo "                  GitHub Copilot (CLI + VS Code Chat)"
 echo ""
 echo " Bootstrap files:"
 echo "   CLAUDE.md                            → Claude Code"
